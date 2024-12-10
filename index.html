@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BABY</title>
+        <link rel="stylesheet" href="STARSHIP.jpg">
+        <script src="STARSHIP.jpg"></script>
+        <link rel="shortcut icon" type="x-icon" href="STARSHIP.jpg" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Baskerville&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+
+        <style>
+            {
+    margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(90deg, hsla(288, 84%, 32%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    width: 100%;
+  }
+header a {
+    margin-right: 20px;
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+.big-heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+.small-heading {
+    font-size: 14px;
+  }
+.sign-up {
+    font-size: 14px;
+    margin-left: 690px;
+}
+.search-bar{
+    margin-left: 10px;
+    width: 200px;
+    height: 30px;
+    padding: 5px 30px 5px 10px; 
+    border: none;
+    border-radius: 0; 
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+.search-icon {
+    position: absolute;
+    top: 27px;
+    right: 39px;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/622/622669.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1;
+}
+.top-header {
+    min-height: 40px;
+    flex-basis: 40%;
+  }
+
+.bottom-header {
+    min-height: 60px;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+.bottom-header img {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 40px; 
+    margin-bottom: 20px;
+  }
+  .bottom-header .Song-Title {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 0;
+  }
+  .bottom-header .Song-Credits {
+    display: block;
+    margin-left: 50px;
+    font-size: 18px;
+    color: black;
+    column-gap: 30px;
+  }
+  .bottom-header .Song-Info {
+    display: block;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+  }
+  .bottom-header .Info{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+  }
+  .bottom-header .Info-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .bottom-header .Release-Date{
+    display: block;
+    margin-top: 60px;
+    margin-right: 115px;
+    font-size: 18px;
+    color: black;
+  }
+  .bottom-header .video-link{
+    position: relative;
+    margin-top: -50px;
+    margin-right: 285px;
+  }
+
+  .bottom-header video {
+    border-radius: 20px;
+    margin: 40px auto; 
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+  .video-link img {
+    width: 30px;
+    height: auto;
+  }
+  .video-link a {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .video-link a:not(:last-child) {
+    margin-right: 20px;
+  }
+  body {
+    font-family: "Circular", sans-serif;
+    text-align: left;
+    color: black;
+    background: linear-gradient(90deg, hsla(309, 100%, 69%, 1) 21%, hsla(292, 100%, 37%, 1) 71%);
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  /*left and right section */
+  .left-section,
+  .right-section {
+    flex: 1;
+    height: 217%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  /*middle section */
+  .middle-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  .middle-section::-webkit-scrollbar {
+    display: none;
+  }
+  /* right section */
+  .artist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+
+  .artist:nth-child(3) {
+    background-color: #b39ddb;
+  }
+
+  .artist:nth-child(4) {
+    background-color: #FFAEB9;
+  }
+
+  .artist:nth-child(5) {
+    background-color: coral; 
+  }
+
+  .artist:nth-child(6) {
+    background-color: yellow; 
+  }
+
+  .artist:nth-child(7) {
+    background-color: #50C878; 
+  }
+
+  .artist:nth-child(8) {
+    background-color: #00FF7F;
+  }
+
+  .artist:nth-child(9) {
+    background-color: #FFFFFF;
+  }
+
+  .artist:nth-child(10) {
+    background-color: skyblue; 
+  }
+
+  .artist:nth-child(11) {
+    background-color: peachpuff; 
+  }
+
+  .artist:nth-child(12) {
+    background-color: orange; 
+  }
+  .artist:nth-child(13) {
+    background-color: #1E90FF; 
+  }
+  .artist:nth-child(14) {
+    background-color: #FF69B4; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .artist img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .artist p {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+  }
+  .title-desc{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(90deg, hsla(288, 84%, 32%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .audio-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .audio-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .audio-details img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .track-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    margin: 0;
+    text-align: left;
+  }
+  
+  .artist-Name {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+  }
+  audio {
+    margin-left: 30px;
+    width: 1310px;
+  }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="top-header">
+                <a href="#" class="big-heading">Paraverse</a>
+                <a href="#" class="small-heading">Featured</a>
+                <a href="#" class="small-heading">Charts</a>
+                <a href="#" class="small-heading">Videos</a>
+                <a href="#" class="small-heading">Promote your Music</a>
+                <a href="#" class="sign-up">Sign Up</a>
+                <input type="text" placeholder="Search lyrics & more" class="search-bar">
+                <span class="search-icon"></span>
+            </nav>
+            <div class="bottom-header">
+                <img src="STARSHIP.jpg" alt="Album Cover">
+                  <div class = "Info">
+                    <p class="Song-Title">Nothing's Gonna Stop Us Now</p>
+                    <p class="Song-Credits">Song by: STARSHIP<br>
+                      Lyrics by: STARSHIP<br>
+                      Composed by: STARSHIP<br>
+                      Arranged by: STARSHIP</p>
+                    <p class= "Song-Info">“This song is our theme song<br> This song is made by Starship"</p>
+                  </div>
+                  <div class = "Info-right">
+                    <p class = "Release-Date">Release Date: 9 May 2014</p>
+                    <video controls width="100%" height="auto">
+                      <source src="Starship - Nothing's Gonna Stop Us Now (Official Music Video) [HD].mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="video-link">
+                      <a href="https://www.youtube.com/watch?v=0nPlIi685DU" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/icons/icons8-youtube-30.png" alt="YouTube Icon">
+                      </a>
+                      <a href="https://www.facebook.com/official.izone" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/icons/icons8-facebook-30.png" alt="Facebook Icon">
+                      </a>
+                      <a href="https://twitter.com/official_izone/" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/icons/icons8-twitter-30.png" alt="Twitter Icon">
+                      </a>
+                      <a href="https://www.instagram.com/official_izone/" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/icons/icons8-instagram-30.png" alt="Instagram Icon">
+                      </a>
+                  </div>                                           
+                  </div> 
+              </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="left-section">
+                  <div class="title-desc">
+                    <p>IZ*ONE - Parallel Universe (Korean) Lyrics</p>
+                  </div>
+                  <div id="lyrics">
+                    <p>
+                      <span style="color: #FFD700; text-shadow: 1px 1px black; font-weight: bold;"><br>Hello Babyy!<br>
+                      I lovee youuu<br>
+                      </span>
+                      <span style="color: #1E90FF; text-shadow: 1px 1px black; font-weight: bold;">
+                        h<br>
+                        r<br><br>
+                      </span>
+                      <span style="color: #FF69B4; text-shadow: 1px 1px black; font-weight: bold;">눈을 감고 너와 함께 했던<br>
+                        약속들을 떠올리면<br>
+                      </span>
+                      <span style="color: #FFFFFF; text-shadow: 1px 1px black; font-weight: bold;">
+                          언제나 넌 내 삶에<br>
+                          스며 들어와<br><br>
+                      </span>
+          
+                      <span style="color: #00FF7F; text-shadow: 1px 1px black; font-weight: bold;">
+                        보이지 않아도 I'll Remember<br>
+                        내 마음은 Always<br>
+                      </span>
+                      <span style="color: #50C878; text-shadow: 1px 1px black; font-weight: bold;">
+                        반복되는 기억을<br>
+                        또 다시 찾아가<br><br>
+                      </span>
+          
+                      <span style="color: #FFA500; text-shadow: 1px 1px white; font-weight: bold;">
+                        우리의 시간은 언제나<br>
+                        항상 영원할 거야<br>
+                        너와의 기억은 기적 같아<br>
+                        You’re my only one<br>
+                      </span>
+                      <span style="color: #800080; text-shadow: 1px 1px white; font-weight: bold;">
+                        보이지 않아도 나는 매일 널 맴돌아<br>
+                        평행선을 따라 걷다 보면<br>
+                        날 볼 수 있을 거야<br><br>
+                      </span>
+                      
+                      <span style="color: #FFAEB9; text-shadow: 1px 1px black; font-weight: bold;">
+                      너의 평행 우주<br><br>
+                      </span>
+                      
+                      <span style="color:#FF7F50; text-shadow: 1px 1px white; font-weight: bold;">
+                        눈을 뜨면 떠올라<br>
+                        행복한 순간들이<br>
+                      </span>
+                      <span style="color: #FFAEB9; text-shadow: 1px 1px black; font-weight: bold;">
+                      마음을 모아 내 소원을 담아<br>
+                      너에게 닿기를 바라 난<br><br>
+                      </span>
+          
+                      <span style="color:#FFDAB9; text-shadow: 1px 1px black; font-weight: bold;">
+                        온 세상을 밝게 비춰준 You<br>
+                      </span>
+                      <span style="color: #87CEEB; text-shadow: 1px 1px black; font-weight: bold;">
+                        너와 나의 시간은 멈춰져<br>
+                      </span>
+                      <span style="color:#FFDAB9; text-shadow: 1px 1px black; font-weight: bold;">
+                        어딘가에 존재해 너를 느낄 수 있게<br>
+                      </span>
+                      <span style="color: #87CEEB; text-shadow: 1px 1px black; font-weight: bold;">
+                        항상 널 지켜줄게 Oh<br><br>
+                      </span>
+          
+                      <span style="color: #800080; text-shadow: 1px 1px white; font-weight: bold;">
+                        보이지 않아도 I'll Remember<br>
+                        내 마음은 Always<br>
+                      </span>
+                      <span style="color: #FFFFFF; text-shadow: 1px 1px black; font-weight: bold;">
+                        반복되는 기억을<br>
+                        또 다시 찾아가<br><br>
+                      </span>
+          
+                      <span style="color: #1E90FF; text-shadow: 1px 1px black; font-weight: bold;">
+                        우리의 시간은 언제나<br>
+                        항상 영원할 거야<br>
+                        너와의 기억은 기적 같아<br>
+                        You’re my only one<br>
+                      </span>
+                      <span style="color: #FFD700; text-shadow: 1px 1px black; font-weight: bold;">
+                        보이지 않아도 나는 매일 널 맴돌아<br>
+                        평행선을 따라 걷다 보면<br>
+                        날 볼 수 있을 거야<br><br>
+                      </span>
+                      
+                      <span style="color:#FFDAB9; text-shadow: 1px 1px black; font-weight: bold;">
+                        운명처럼 다가와준 널 기억해<br>
+                      </span>
+                      <span style="color: #FF69B4; text-shadow: 1px 1px black; font-weight: bold;">
+                        어디 있어도 우리 맞잡은 두 손<br>
+                        놓치지 않을게 Yeah<br>
+                      </span>
+                      <span style="color:#FF7F50; text-shadow: 1px 1px white; font-weight: bold;">
+                        평행우주처럼<br>
+                      </span>
+                      <span style="color: #87CEEB; text-shadow: 1px 1px black; font-weight: bold;">
+                        마치 기적처럼<br>
+                      </span>
+                      <span style="color: #FFA500; text-shadow: 1px 1px white; font-weight: bold;">
+                        시간이 지나도 우리는 다 느낄 수 있어<br><br>
+                      </span>
+          
+                      <span style="color: #50C878; text-shadow: 1px 1px black; font-weight: bold;">우리의 시간은 언제나 
+                      </span>
+                      <span style="color: #FFA500; text-shadow: 1px 1px white; font-weight: bold;">(Oh)<br>
+                      </span>
+                      <span style="color: #50C878; text-shadow: 1px 1px black; font-weight: bold;">
+                        항상 영원할 거야<br>
+                      </span>
+                      <span style="color: black; text-shadow: 1px 1px white; font-weight: bold;">
+                        [
+                      </span>
+                      <span style="color: #50C878; text-shadow: 1px 1px black; font-weight: bold;">채 
+                      </span>
+                      <span style="color: black; text-shadow: 1px 1px white; font-weight: bold;">
+                        /
+                      </span>
+                      <span style="color: #FFA500; text-shadow: 1px 1px white; font-weight: bold;">유
+                      </span>
+                      <span style="color: black; text-shadow: 1px 1px white; font-weight: bold;">
+                        ] 너와의 기억은 
+                      </span>
+                      <span style="color: #50C878; text-shadow: 1px 1px black; font-weight: bold;">기적 같아<br> 
+                      </span>
+                      <span style="color: black; text-shadow: 1px 1px white; font-weight: bold;">
+                        [
+                      </span>  
+                      <span style="color: #50C878; text-shadow: 1px 1px black; font-weight: bold;">채
+                      </span>
+                      <span style="color: black; text-shadow: 1px 1px white; font-weight: bold;">
+                        /
+                      </span> 
+                      <span style="color: #FFA500; text-shadow: 1px 1px white; font-weight: bold;">유
+                      </span>
+                      <span style="color: black; text-shadow: 1px 1px white; font-weight: bold;">
+                        ] 
+                      </span>
+                      <span style="color: #50C878; text-shadow: 1px 1px black; font-weight: bold;"> You're my
+                      </span> 
+                      <span style="color: black; text-shadow: 1px 1px white; font-weight: bold;">
+                        only one<br>
+                      </span>
+                      <span style="color: #00FF7F; text-shadow: 1px 1px black; font-weight: bold;">
+                        보이지 않아도
+                      </span>
+                      <span style="color: #FFA500; text-shadow: 1px 1px white; font-weight: bold;">(Ooh)
+                      
+                      </span>
+                      
+                      <span style="color: #00FF7F; text-shadow: 1px 1px black; font-weight: bold;">
+                        나는 매일 널 맴돌아<br>
+                      </span>
+                      <span style="color: #00FF7F; text-shadow: 1px 1px black; font-weight: bold;">
+                        평행선을 따라 걷다 보면<br>
+                        날 볼 수 있을 거야<br><br>
+                      </span>
+                      <span style="color: #FF69B4; text-shadow: 1px 1px black; font-weight: bold;">
+                        너의 평행 우주
+                      </span>
+                    </p>
+                  </div>    
+                </div>
+                <div class="middle-section">
+                  <div class="title-desc">
+                    <p>Nothing's Gonna Stop Us Now Lyrics</p>
+                  </div>
+                  <div id="en-lyrics">
+                    <p>
+                      <span style="color: black; font-family: Poppins;">
+                        <br>
+                        Lookin' in your eyes I see a paradise<br>
+This world that I found is too good to be true<br>
+Standin' here beside you<br>
+Want so much to give you this love in my hear<br>
+That I'm feelin' for you<br><br>
+
+Let 'em say we're crazy, I don't care 'bout that<br>
+Put your hand in my hand<br>
+Baby, don't ever look back<br>
+Let the world around us just fall apart<br>
+Baby, we can make it if we're heart to heart<br><br>
+
+And we can build this dream together<br>
+Standing strong forever<br>
+Nothing's gonna stop us now<br>
+And if this world runs out of lovers<br>
+We'll still have each other<br>
+Nothing's gonna stop us<br>
+Nothing's gonna stop us now<br>
+Oh, whoa<br><br>
+
+I'm so glad I found you, I'm not gonna lose you<br>
+Whatever it takes I will stay here with you<br>
+Take it to the good times<br>
+See it through the bad times<br>
+Whatever it takes is what I'm gonna do<br><br>
+
+Let 'em say we're crazy<br>
+What do they know?<br>
+Put your arms around me<br>
+Baby, don't ever let go<br>
+Let the world around us just fall apart<br>
+Baby, we can make it if we're heart to heart<br><br>
+
+And we can build this dream together<br>
+Standing strong forever<br>
+Nothing's gonna stop us now<br>
+And if this world runs out of lovers<br>
+We'll still have each other<br>
+Nothing's gonna stop us<br>
+Nothing's gonna stop us<br><br>
+
+Ooh, all that I need is you<br>
+All that I ever need<br>
+And all that I want to do<br>
+Is hold you forever and ever and ever, hey<br><br>
+
+And we can build this dream together<br>
+Standing strong forever<br>
+Nothing's gonna stop us now<br>
+And if this world runs out of lovers<br>
+We'll still have each other<br>
+Nothing's gonna stop us<br>
+Nothing's gonna stop us, woah<br><br>
+
+And we can build this dream together<br>
+Standing strong forever<br>
+Nothing's gonna stop us now<br>
+(Nothing's gonna stop us now)<br>
+If this world runs out of lovers<br>
+We'll still have each other<br>
+Nothing's gonna stop us<br>
+(Oh, no)<br><br>
+
+And we can build this dream together (Hey baby)<br>
+Standing strong forever (I know)<br>
+Nothing's gonna stop us now (Hey baby, nothing's gonna stop us)<br>
+If this world runs out of lovers (Hey baby, ooh)<br>
+We'll still have each other (Nothing's gonna)<br>
+Nothing's gonna stop us (Hey baby, nothing's gonna stop us now, yeah)<br>
+And we can build this dream together<br>
+Standing strong forever<br>
+Nothing's gonna stop us now<br><br>
+                      </span>
+                    </p>
+                  </div>      
+                </div>
+                <div class="right-section">
+                  <div class="title-desc">
+                    <p>Our pics</p>
+                  </div><br>
+                  <div class="artist">
+                    <img src="./assets/photos/Eunbi.png" alt="Kwon Eunbi">
+                    <p>JANUARY </p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Sakura.png" alt="Miyawaki Sakura">
+                    <p>FEBRUARY</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Hyewon.png" alt="Kang Hye Won">
+                    <p>MARCH</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Yena.png" alt="Choi Ye Na">
+                    <p>APRIL</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Chaeyeon.png" alt="Lee Chae Yeon">
+                    <p>MAY</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Chaewon.png" alt="Kim Chae Won">
+                    <p>JUNE</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Minju.png" alt="Kim Min Ju">
+                    <p>JULY</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Nako.png" alt=" Yabuki Nako">
+                    <p> AUGUST</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Hitomi.png" alt="Honda Hitomi">
+                    <p>SEPTEMBER</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Yuri.png" alt="Jo Yu Ri">
+                    <p>OCTOBER</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Yujin.png" alt="Ahn Yu Jin ">
+                    <p>NOVEMBER</p>
+                  </div>
+                  <div class="artist">
+                    <img src="./assets/photos/Wonyoung.png" alt="Jang Won Young">
+                    <p>DECEMBER</p>
+                  </div>
+                  <br><br><br><br>
+                </div>
+            </div>   
+        </main>
+        <footer>
+            <div class="audio-container">
+                <div class="audio-details">
+                  <img src="STARSHIP.jpg" alt="Image description">
+                  <div class="track-details">
+                    <p class="title">Nothing's Gonna Stop Us Now</p>
+                    <p class="artist-Name">Starship</p>
+                  </div>
+                </div>
+                <audio controls>
+                  <source src="Starship - Nothing's Gonna Stop Us Now (Official Music Video) [HD].mp3" type="audio/mpeg" />
+                </audio>
+              </div>                 
+        </footer>
+    </body>
+</html>
